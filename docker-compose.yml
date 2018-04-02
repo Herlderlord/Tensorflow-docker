@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+        tensorflow:
+                build: ./tensorFlowDocker
+                container_name: tensorFlow
+                volumes:
+                        - ./notebooks/:/notebooks
+                ports:
+                        - 8888:8888
+                        - 6006:6006
